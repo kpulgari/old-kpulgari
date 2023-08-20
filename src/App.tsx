@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
-import "./App.css";
 import { Footer } from "./components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+
+import "./App.css";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -27,22 +28,19 @@ function App() {
         githubLogo={
           <FontAwesomeIcon
             icon={faGithub}
-            size="xl"
-            style={{ color: "#000000" }}
+            style={{ color: "#000000", fontSize: "var(--icon-size)" }}
           />
         }
         linkedInLogo={
           <FontAwesomeIcon
             icon={faLinkedinIn}
-            size="xl"
-            style={{ color: "#000000" }}
+            style={{ color: "#000000", fontSize: "var(--icon-size)" }}
           />
         }
         mailLogo={
           <FontAwesomeIcon
             icon={faEnvelope}
-            size="xl"
-            style={{ color: "#000000" }}
+            style={{ color: "#000000", fontSize: "var(--icon-size)" }}
           />
         }
       ></Footer>

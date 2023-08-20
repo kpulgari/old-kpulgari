@@ -16,11 +16,13 @@
   transition: all 0.2s ease;
   border-radius: 10px;
   padding: 1vw;
+  color: #666;
 }
 
 .navbar-button:hover {
   background-color: rgb(239, 237, 237);
   cursor: pointer;
+  color: black;
 }
 
 .navbar-button.darkmode {
@@ -30,4 +32,5 @@
 
 .active {
   font-weight: bold;
+  color: black;
 }
