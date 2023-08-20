@@ -1,0 +1,95 @@
+.homepage {
+  --blob-size: 15vw;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage.text {
+  display: flex;
+  justify-content: center;
+  margin-left: 2vw;
+  width: 33%;
+  height: 30vw;
+}
+
+.homepage.header {
+  font-size: 4vw;
+}
+
+.homepage.blurb {
+  font-size: 1.25vw;
+}
+
+.blobs {
+  display: flex;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  width: 50vw;
+  border-radius: 10px;
+}
+
+.blur {
+  -webkit-backdrop-filter: blur(7vw);
+  position: absolute;
+  height: 90%;
+  width: 65%;
+  left: 35vw;
+}
+
+.blob.one {
+  background-color: #00bbf9;
+  position: absolute;
+  width: var(--blob-size);
+  height: var(--blob-size);
+  border-radius: 100%;
+  left: 65%;
+  top: 40%;
+  animation: blob 60s ease infinite alternate-reverse;
+}
+
+@keyframes blob {
+  50% {
+    left: 75%;
+    top: 55%;
+  }
+}
+
+.blob.two {
+  background-color: #9b5de5;
+  position: absolute;
+  width: var(--blob-size);
+  height: var(--blob-size);
+  border-radius: 100%;
+  left: 77%;
+  top: 50%;
+  animation: blob2 60s ease infinite alternate;
+}
+
+@keyframes blob2 {
+  50% {
+    left: 60%;
+    top: 45%;
+  }
+}
+
+.blob.three {
+  background-color: #f15bb5;
+  position: absolute;
+  width: var(--blob-size);
+  height: var(--blob-size);
+  border-radius: 100%;
+  left: 60%;
+  top: 45%;
+  animation: blob3 60s ease infinite alternate;
+}
+
+@keyframes blob3 {
+  50% {
+    left: 77%;
+    top: 50%;
+  }
+}
