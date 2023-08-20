@@ -7,6 +7,12 @@ interface Props {
 }
 
 export const Navbar = ({ currentPage, darkmodeIcon }: Props) => {
+  function onResumeButtonClick(): void {
+    window.open(
+      "https://drive.google.com/file/d/1T2FqbVuec1xLLJLyaATLAftHeVjSbPcd/view?usp=sharing"
+    );
+  }
+
   return (
     <div className="navbar text">
       <button
@@ -23,15 +29,8 @@ export const Navbar = ({ currentPage, darkmodeIcon }: Props) => {
       >
         Projects
       </button>
-      <button className="navbar-button resume">
-        <a
-          className="resume"
-          href="https://drive.google.com/file/d/1T2FqbVuec1xLLJLyaATLAftHeVjSbPcd/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume
-        </a>
+      <button className="navbar-button resume" onClick={onResumeButtonClick}>
+        Resume
       </button>
       <button className="navbar-button darkmode"> {darkmodeIcon} </button>
     </div>

@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="root">
       <Navbar
-        currentPage="home"
+        currentPage={currentPage}
         darkmodeIcon={
           <FontAwesomeIcon
             icon={darkModeEnabled ? faSun : faMoon}

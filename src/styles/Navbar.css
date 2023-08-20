@@ -23,11 +23,6 @@
   cursor: pointer;
 }
 
-.resume {
-  text-decoration: none;
-  color: black;
-}
-
 .navbar-button.darkmode {
   margin-left: auto;
   margin-right: 1.5vw;
