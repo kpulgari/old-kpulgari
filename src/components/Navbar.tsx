@@ -1,11 +1,12 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "../styles/Navbar.css";
 
 interface Props {
   currentPage: string;
+  darkmodeIcon: ReactNode;
 }
 
-export const Navbar = ({ currentPage }: Props) => {
+export const Navbar = ({ currentPage, darkmodeIcon }: Props) => {
   return (
     <div className="navbar text">
       <button
@@ -32,7 +33,7 @@ export const Navbar = ({ currentPage }: Props) => {
           Resume
         </a>
       </button>
-      <button className="navbar-button darkmode">Darkmode</button>
+      <button className="navbar-button darkmode"> {darkmodeIcon} </button>
     </div>
   );
 };

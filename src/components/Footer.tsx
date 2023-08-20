@@ -1,33 +1,40 @@
-import React from "react";
+import React, { ReactNode } from "react";
+import "../styles/Footer.css";
 
-export const Footer = () => {
+interface Props {
+  githubLogo: ReactNode;
+  linkedInLogo: ReactNode;
+  mailLogo: ReactNode;
+}
+
+export const Footer = ({ githubLogo, linkedInLogo, mailLogo }: Props) => {
   return (
-    <div className="icons">
-      <span className="fa-stack small">
+    <div className="footer icons">
+      <span className="fa-stack">
         <a
           href="https://github.com/kpulgari"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fa-brands fa-github fa-2x"></i>
+          {githubLogo}
         </a>
       </span>
-      <span className="fa-stack small">
+      <span className="fa-stack">
         <a
           href="https://www.linkedin.com/in/kpulgari/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fa-brands fa-linkedin fa-2x"></i>
+          {linkedInLogo}
         </a>
       </span>
-      <span className="fa-stack small">
+      <span className="fa-stack">
         <a
           href="mailto:kaushikpulgari@yahoo.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fa-solid fa-envelope fa-2x"></i>
+          {mailLogo}
         </a>
       </span>
     </div>

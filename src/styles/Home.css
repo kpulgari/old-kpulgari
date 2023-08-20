@@ -43,9 +43,8 @@
 }
 
 .homepage.text {
-  display: flex;
   justify-content: center;
-  margin-left: 2vw;
+  margin-left: 3vw;
   width: 33%;
   height: 35vw;
 }
