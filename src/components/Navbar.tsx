@@ -1,11 +1,27 @@
 import React from "react";
 import "../styles/Navbar.css";
 
-export const Navbar = () => {
+interface Props {
+  currentPage: string;
+}
+
+export const Navbar = ({ currentPage }: Props) => {
   return (
     <div className="navbar text">
-      <button className="navbar-button home">Home</button>
-      <button className="navbar-button projects">Projects</button>
+      <button
+        className={`navbar-button home ${
+          currentPage === "home" ? "active" : ""
+        }`}
+      >
+        Home
+      </button>
+      <button
+        className={`navbar-button projects ${
+          currentPage === "projects" ? "active" : ""
+        }`}
+      >
+        Projects
+      </button>
       <button className="navbar-button resume">
         <a
           className="resume"
