@@ -12,6 +12,18 @@ function App() {
   const [currentPage, setCurrentPage] = useState("home");
   const [darkModeEnabled, setDarkModeEnabled] = useState(false);
 
+  const handlePageChange = (page: string) => {
+    setCurrentPage(page);
+  };
+
+  const renderPage = () => {
+    if (currentPage === "home") {
+      return <Home />;
+    } else if (currentPage === "projects") {
+      return <></>;
+    }
+  };
+
   return (
     <div className="root">
       <Navbar
@@ -22,8 +34,9 @@ function App() {
             style={{ color: "#000000" }}
           />
         }
+        onPageChange={handlePageChange}
       ></Navbar>
-      <Home></Home>
+      {renderPage()}
       <Footer
         githubLogo={
           <FontAwesomeIcon

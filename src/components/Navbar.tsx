@@ -4,9 +4,10 @@ import "../styles/Navbar.css";
 interface Props {
   currentPage: string;
   darkmodeIcon: ReactNode;
+  onPageChange: (page: string) => void;
 }
 
-export const Navbar = ({ currentPage, darkmodeIcon }: Props) => {
+export const Navbar = ({ currentPage, darkmodeIcon, onPageChange }: Props) => {
   function onResumeButtonClick(): void {
     window.open(
       "https://drive.google.com/file/d/1T2FqbVuec1xLLJLyaATLAftHeVjSbPcd/view?usp=sharing"
@@ -19,6 +20,7 @@ export const Navbar = ({ currentPage, darkmodeIcon }: Props) => {
         className={`navbar-button home ${
           currentPage === "home" ? "active" : ""
         }`}
+        onClick={() => onPageChange("home")}
       >
         Home
       </button>
@@ -26,6 +28,7 @@ export const Navbar = ({ currentPage, darkmodeIcon }: Props) => {
         className={`navbar-button projects ${
           currentPage === "projects" ? "active" : ""
         }`}
+        onClick={() => onPageChange("projects")}
       >
         Projects
       </button>
