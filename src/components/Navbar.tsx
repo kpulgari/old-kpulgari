@@ -5,9 +5,15 @@ interface Props {
   currentPage: string;
   darkmodeIcon: ReactNode;
   onPageChange: (page: string) => void;
+  onDarkModeClick: () => void;
 }
 
-export const Navbar = ({ currentPage, darkmodeIcon, onPageChange }: Props) => {
+export const Navbar = ({
+  currentPage,
+  darkmodeIcon,
+  onPageChange,
+  onDarkModeClick,
+}: Props) => {
   function onResumeButtonClick(): void {
     window.open(
       "https://drive.google.com/file/d/1T2FqbVuec1xLLJLyaATLAftHeVjSbPcd/view?usp=sharing"
@@ -15,7 +21,7 @@ export const Navbar = ({ currentPage, darkmodeIcon, onPageChange }: Props) => {
   }
 
   return (
-    <div className="navbar text">
+    <div className={`navbar text`}>
       <button
         className={`navbar-button home ${
           currentPage === "home" ? "active" : ""
@@ -35,7 +41,10 @@ export const Navbar = ({ currentPage, darkmodeIcon, onPageChange }: Props) => {
       <button className="navbar-button resume" onClick={onResumeButtonClick}>
         Resume
       </button>
-      <button className="navbar-button darkmode"> {darkmodeIcon} </button>
+      <button className="navbar-button darkmode" onClick={onDarkModeClick}>
+        {" "}
+        {darkmodeIcon}{" "}
+      </button>
     </div>
   );
 };

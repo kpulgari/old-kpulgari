@@ -1,5 +1,21 @@
 :root {
   --icon-size: 1.5vw;
+  -webkit-font-smoothing: antialiased;
+  --background-color: white;
+  --button-color: white;
+  --button-text-color: #666;
+  --button-hover-color: rgb(239, 237, 237);
+  --button-text-hover-color: black;
+  --text-color: black;
+}
+
+.dark-mode {
+  --background-color: black;
+  --button-color: black;
+  --button-text-color: #999;
+  --button-hover-color: rgb(64, 61, 61);
+  --button-text-hover-color: white;
+  --text-color: white;
 }
 
 .text {

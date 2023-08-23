@@ -10,7 +10,7 @@ interface Props {
 export const Footer = ({ githubLogo, linkedInLogo, mailLogo }: Props) => {
   return (
     <div className="footer icons">
-      <span className="fa-stack">
+      <span className="fa-stack github">
         <a
           href="https://github.com/kpulgari"
           target="_blank"
@@ -19,7 +19,7 @@ export const Footer = ({ githubLogo, linkedInLogo, mailLogo }: Props) => {
           {githubLogo}
         </a>
       </span>
-      <span className="fa-stack">
+      <span className="fa-stack linkedin">
         <a
           href="https://www.linkedin.com/in/kpulgari/"
           target="_blank"
@@ -28,7 +28,7 @@ export const Footer = ({ githubLogo, linkedInLogo, mailLogo }: Props) => {
           {linkedInLogo}
         </a>
       </span>
-      <span className="fa-stack">
+      <span className="fa-stack email">
         <a
           href="mailto:kaushikpulgari@yahoo.com"
           target="_blank"

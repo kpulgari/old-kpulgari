@@ -37,20 +37,42 @@
 }
 
 .homepage {
-  background-color: white;
   display: flex;
-  flex-direction: column;
+  position: fixed;
+  left: 0;
+  bottom: 10vh;
+  height: 80vh;
+  width: 100vw;
+  background-color: var(--background-color);
 }
 
 .homepage.text {
-  justify-content: center;
-  margin-left: 3vw;
-  width: 33%;
-  height: 35vw;
+  display: flex;
+  width: 50%;
+  height: 80vh;
+  color: var(--text-color);
 }
 
 .homepage.header {
   font-size: 4vw;
+  width: inherit;
+  height: min-content;
+  justify-content: left;
+  align-items: center;
+  background-color: transparent;
+  margin-left: 3vw;
+  margin-bottom: 40vh;
+}
+
+.homepage.blurb {
+  font-size: 1.25vw;
+  width: inherit;
+  height: min-content;
+  justify-content: left;
+  align-items: center;
+  background-color: transparent;
+  margin-left: 3vw;
+  margin-bottom: 37vh;
 }
 
 .homepage.header:hover {
@@ -68,31 +90,27 @@
   -webkit-text-fill-color: transparent;
 }
 
-.homepage.blurb {
-  font-size: 1.25vw;
-}
-
 .blobs {
   display: flex;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
   width: 50vw;
-  border-radius: 10px;
+  height: 80vh;
+  background-color: transparent;
+  position: fixed;
+  right: 0;
 }
 
 .blur {
   -webkit-backdrop-filter: blur(7vw);
-  position: absolute;
-  height: 88.9%;
-  width: 65%;
-  left: 35vw;
+  position: fixed;
+  height: 90vh;
+  width: 60%;
+  right: 0;
+  background-color: transparent;
 }
 
 .blob.one {
   background-color: var(--blue);
-  position: absolute;
+  position: fixed;
   width: var(--blob-size);
   height: var(--blob-size);
   border-radius: 100%;
@@ -103,7 +121,7 @@
 
 .blob.two {
   background-color: var(--purple);
-  position: absolute;
+  position: fixed;
   width: var(--blob-size);
   height: var(--blob-size);
   border-radius: 100%;
@@ -114,7 +132,7 @@
 
 .blob.three {
   background-color: var(--pink);
-  position: absolute;
+  position: fixed;
   width: var(--blob-size);
   height: var(--blob-size);
   border-radius: 100%;
