@@ -42,8 +42,7 @@ export const Navbar = ({
         Resume
       </button>
       <button className="navbar-button darkmode" onClick={onDarkModeClick}>
-        {" "}
-        {darkmodeIcon}{" "}
+        {darkmodeIcon}
       </button>
     </div>
   );

@@ -12,7 +12,7 @@ import "./styles/App.css";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
-  const [darkModeEnabled, setDarkModeEnabled] = useState(false);
+  const [darkModeEnabled, setDarkModeEnabled] = useState(true);
 
   const iconStyles = {
     color: darkModeEnabled ? "#FFFFFF" : "#000000",
