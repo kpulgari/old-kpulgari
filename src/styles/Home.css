@@ -1,8 +1,27 @@
 :root {
-  --purple: rgb(100, 39, 233);
-  --pink: rgb(228, 58, 217);
-  --blue: #00bbf9;
+  --blob-one-color: #00bbf9;
+  --blob-two-color: rgb(100, 39, 233);
+  --blob-three-color: rgb(228, 58, 217);
+
   --blob-size: 15vw;
+}
+
+.colorOne {
+  --blob-one-color: #00bbf9;
+  --blob-two-color: #fee440;
+  --blob-three-color: #00f5d4;
+}
+
+.colorTwo {
+  --blob-one-color: #1f7a8c;
+  --blob-two-color: #022b3a;
+  --blob-three-color: #bfdbf7;
+}
+
+.colorThree {
+  --blob-one-color: #ff595e;
+  --blob-two-color: #ffca3a;
+  --blob-three-color: #8ac926;
 }
 
 @keyframes text-background-pan {
@@ -79,10 +98,10 @@
   animation: text-background-pan 3s linear infinite;
   background: linear-gradient(
     to right,
-    var(--purple),
-    var(--pink),
-    var(--blue),
-    var(--purple)
+    var(--blob-one-color),
+    var(--blob-two-color),
+    var(--blob-three-color),
+    var(--blob-one-color)
   );
   background-size: 200%;
   background-clip: text;
@@ -110,7 +129,7 @@
 }
 
 .blob.one {
-  background-color: var(--blue);
+  background-color: var(--blob-one-color);
   position: fixed;
   width: var(--blob-size);
   height: var(--blob-size);
@@ -121,7 +140,7 @@
 }
 
 .blob.two {
-  background-color: var(--purple);
+  background-color: var(--blob-two-color);
   position: fixed;
   width: var(--blob-size);
   height: var(--blob-size);
@@ -132,7 +151,7 @@
 }
 
 .blob.three {
-  background-color: var(--pink);
+  background-color: var(--blob-three-color);
   position: fixed;
   width: var(--blob-size);
   height: var(--blob-size);
