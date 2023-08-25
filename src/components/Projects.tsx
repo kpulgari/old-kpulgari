@@ -2,24 +2,34 @@ import { Images } from "./Images";
 
 import "../styles/Projects.css";
 
-const links = [
-  "https://github.com/kpulgari/ifi-terminal",
-  "https://github.com/kpulgari/linking-wikipedia-pages",
-  "https://github.com/kpulgari/react-todo-app",
-];
+const names = ["IFI Terminal", "Linking Wikipedia Pages", "A Simple Todo App"];
 
-const names = ["IFI Terminal", "Linking Wikipedia Pages", "Simple Todo App"];
 const description = [
   "Easy-to-use Python application that displays real-time financial information on the terminal.",
   "C++ program that analyzes Wikipedia pages as a graph and implements traversal algorithms like BFS, IDDFS, and PageRank.",
   "(title)",
 ];
 
-export const Projects = () => {
-  const images = Images();
+const links = [
+  "https://github.com/kpulgari/ifi-terminal",
+  "https://github.com/kpulgari/linking-wikipedia-pages",
+  "https://github.com/kpulgari/react-todo-app",
+];
 
-  const handleImageClick = (index: number) => {
+const demos = [
+  "https://drive.google.com/file/d/1jaHfjvsNJg4x4zcLPFz05_uAKi_7Y6Ny/view",
+  "https://drive.google.com/file/d/1gOjSGB0JahHcqG-SETZk9mJUC08JLbgs/view",
+];
+
+const images = Images();
+
+export const Projects = () => {
+  const handleGithubClick = (index: number) => {
     window.open(links[index]);
+  };
+
+  const handleDemoClick = (index: number) => {
+    window.open(demos[index]);
   };
 
   return (
@@ -27,15 +37,27 @@ export const Projects = () => {
       <div className="carousel">
         <div className="inner-carousel">
           {images.map((image, index) => (
-            <div
-              className={`carousel-item ${index}`}
-              onClick={() => handleImageClick(index)}
-              key={index}
-            >
+            <div className={`carousel-item ${index}`} key={index}>
               <img src={image} alt={`Project ${index + 1}`} />
               <div className="overlay text">
                 <h2 className="project header">{names[index]}</h2>
                 <p className="project description">{description[index]}</p>
+                <div>
+                  <button
+                    className="project github button"
+                    onClick={() => handleGithubClick(index)}
+                  >
+                    GitHub
+                  </button>
+                  {index < demos.length ? (
+                    <button
+                      className="project demo button"
+                      onClick={() => handleDemoClick(index)}
+                    >
+                      Demo
+                    </button>
+                  ) : null}
+                </div>
               </div>
             </div>
           ))}
