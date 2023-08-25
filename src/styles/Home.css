@@ -6,19 +6,19 @@
   --blob-size: 15vw;
 }
 
-.colorOne {
+.color-one {
   --blob-one-color: #00bbf9;
   --blob-two-color: #fee440;
   --blob-three-color: #00f5d4;
 }
 
-.colorTwo {
-  --blob-one-color: #1f7a8c;
-  --blob-two-color: #022b3a;
-  --blob-three-color: #bfdbf7;
+.color-two {
+  --blob-one-color: #2364aa;
+  --blob-two-color: #3da5d9;
+  --blob-three-color: #73bfb8;
 }
 
-.colorThree {
+.color-three {
   --blob-one-color: #ff595e;
   --blob-two-color: #ffca3a;
   --blob-three-color: #8ac926;
@@ -74,7 +74,7 @@
 
 .homepage.header {
   font-size: 4vw;
-  width: inherit;
+  width: max-content;
   height: min-content;
   justify-content: left;
   align-items: center;
@@ -85,7 +85,7 @@
 
 .homepage.blurb {
   font-size: 1.25vw;
-  width: inherit;
+  width: max-content;
   height: min-content;
   justify-content: left;
   align-items: center;

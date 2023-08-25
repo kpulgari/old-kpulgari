@@ -13,7 +13,7 @@ import "./styles/App.css";
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
 
-  const colorSelections = ["", "colorOne", "colorTwo", "colorThree"];
+  const colorSelections = ["", "color-one", "color-two", "color-three"];
   const [blobColorIndex, setBlobColorIndex] = useState(
     Math.floor(Math.random() * colorSelections.length)
   );

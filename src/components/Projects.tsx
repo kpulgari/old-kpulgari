@@ -11,7 +11,7 @@ const links = [
 const names = ["IFI Terminal", "Linking Wikipedia Pages", "Simple Todo App"];
 const description = [
   "Easy-to-use Python application that displays real-time financial information on the terminal.",
-  "C++ Program that analyzes Wikipedia pages as a graph and implements traversal algorithms like BFS, IDDFS, and PageRank.",
+  "C++ program that analyzes Wikipedia pages as a graph and implements traversal algorithms like BFS, IDDFS, and PageRank.",
   "(title)",
 ];
 
