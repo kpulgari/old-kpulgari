@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { ReactEventHandler, useEffect, useState } from "react";
 import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
@@ -12,13 +12,32 @@ import "./styles/App.css";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
-  const [darkModeEnabled, setDarkModeEnabled] = useState(true);
 
   const colorSelections = ["", "colorOne", "colorTwo", "colorThree"];
   const [blobColorIndex, setBlobColorIndex] = useState(
     Math.floor(Math.random() * colorSelections.length)
   );
   const [blobColor, setBlobColor] = useState(colorSelections[blobColorIndex]);
+
+  const prefersDarkMode = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
+  const [darkModeEnabled, setDarkModeEnabled] = useState(prefersDarkMode);
+
+  useEffect(() => {
+    const updateDarkMode = (e: MediaQueryListEvent) => {
+      setDarkModeEnabled(e.matches);
+    };
+
+    const darkModeMediaQuery = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    );
+    darkModeMediaQuery.addEventListener("change", updateDarkMode);
+
+    return () => {
+      darkModeMediaQuery.removeEventListener("change", updateDarkMode);
+    };
+  }, []);
 
   const iconStyles = {
     color: darkModeEnabled ? "#FFFFFF" : "#000000",
