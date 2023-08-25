@@ -101,6 +101,7 @@
 
 .blur {
   -webkit-backdrop-filter: blur(7vw);
+  backdrop-filter: blur(7vw);
   position: fixed;
   height: 90vh;
   width: 60%;
