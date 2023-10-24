@@ -12,9 +12,9 @@
 
 @media screen and (max-width: 768px) {
   :root {
-    --blob-size: 10vw;
-    --font-size: 2vw;
-    --font-size-header: 5vw;
+    --blob-size: 8vw;
+    --font-size: 2vh;
+    --font-size-header: 5vh;
     --blob-width: 50vw;
     --blob-blur: 50%;
   }
