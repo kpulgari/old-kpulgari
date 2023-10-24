@@ -83,7 +83,11 @@
   background-color: transparent;
   margin-left: 3vw;
   margin-bottom: 40vh;
+}
+
+.homepage.header:hover {
   cursor: pointer;
+  color: var(--button-text-color);
 }
 
 .homepage.blurb {
