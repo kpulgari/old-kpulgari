@@ -4,6 +4,20 @@
   --blob-three-color: rgb(228, 58, 217);
 
   --blob-size: 15vw;
+  --font-size: 1.25vw;
+  --font-size-header: 4vw;
+  --blob-width: 50vw;
+  --blob-blur: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --blob-size: 10vw;
+    --font-size: 2vw;
+    --font-size-header: 5vw;
+    --blob-width: 50vw;
+    --blob-blur: 55%;
+  }
 }
 
 .color-one {
@@ -75,7 +89,7 @@
 }
 
 .homepage.header {
-  font-size: 4vw;
+  font-size: var(--font-size-header);
   width: max-content;
   height: min-content;
   justify-content: left;
@@ -91,7 +105,7 @@
 }
 
 .homepage.blurb {
-  font-size: 1.25vw;
+  font-size: var(--font-size);
   width: max-content;
   height: min-content;
   justify-content: left;
@@ -115,7 +129,7 @@
 
 .blobs {
   display: flex;
-  width: 50vw;
+  width: var(--blob-width);
   height: 80vh;
   background-color: transparent;
   position: fixed;
@@ -127,7 +141,7 @@
   backdrop-filter: blur(7vw);
   position: fixed;
   height: 90vh;
-  width: 60%;
+  width: var(--blob-blur);
   right: 0;
   background-color: transparent;
 }

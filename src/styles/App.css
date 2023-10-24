@@ -9,6 +9,12 @@
   --text-color: black;
 }
 
+@media screen and (max-width: 768px) {
+  :root {
+    --icon-size: 2vh;
+  }
+}
+
 .dark-mode {
   --background-color: black;
   --button-color: black;
