@@ -52,7 +52,7 @@ function App() {
     setDarkModeEnabled(!darkModeEnabled);
   };
 
-  const handleHeaderHover = () => {
+  const handleHeaderClick = () => {
     const nextIndex = (blobColorIndex + 1) % colorSelections.length;
 
     setBlobColorIndex(nextIndex);
@@ -61,7 +61,7 @@ function App() {
 
   const renderPage = () => {
     if (currentPage === "home") {
-      return <Home onHeaderHover={handleHeaderHover} blobColor={blobColor} />;
+      return <Home onHeaderClick={handleHeaderClick} blobColor={blobColor} />;
     } else if (currentPage === "projects") {
       return <Projects />;
     }

@@ -5,6 +5,8 @@
   bottom: 0;
   left: 0;
   background-color: var(--background-color);
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .fa-stack.github {

@@ -2,15 +2,15 @@ import { useState } from "react";
 import "../styles/Home.css";
 
 interface Props {
-  onHeaderHover: () => void;
+  onHeaderClick: () => void;
   blobColor: string;
 }
 
-export const Home = ({ onHeaderHover, blobColor }: Props) => {
+export const Home = ({ onHeaderClick: onHeaderClick, blobColor }: Props) => {
   return (
     <div className="homepage">
       <div className={`homepage text ${blobColor}`}>
-        <h1 className="homepage header" onMouseOver={onHeaderHover}>
+        <h1 className="homepage header" onClick={onHeaderClick}>
           Kaushik Pulgari
         </h1>
         <span className="homepage blurb">CS + Economics @ UIUC</span>

@@ -81,6 +81,9 @@
   background-color: transparent;
   margin-left: 3vw;
   margin-bottom: 40vh;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .homepage.blurb {
@@ -92,9 +95,6 @@
   background-color: transparent;
   margin-left: 3vw;
   margin-bottom: 37vh;
-}
-
-.homepage.header:hover {
   animation: text-background-pan 3s linear infinite;
   background: linear-gradient(
     to right,
