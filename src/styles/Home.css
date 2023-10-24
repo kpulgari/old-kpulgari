@@ -8,15 +8,21 @@
   --font-size-header: 4vw;
   --blob-width: 50vw;
   --blob-blur: 60%;
+  --word-break: max-content;
+  --word-break-blurb: max-content;
+  --blurb-margin: 37vh;
 }
 
 @media screen and (max-width: 768px) {
   :root {
-    --blob-size: 8vw;
+    --blob-size: 10vw;
     --font-size: 2vh;
     --font-size-header: 5vh;
     --blob-width: 50vw;
-    --blob-blur: 50%;
+    --blob-blur: 55%;
+    --word-break: 10%;
+    --word-break-blurb: 20%;
+    --blurb-margin: 34vh;
   }
 }
 
@@ -90,7 +96,7 @@
 
 .homepage.header {
   font-size: var(--font-size-header);
-  width: max-content;
+  width: var(--word-break);
   height: min-content;
   justify-content: left;
   align-items: center;
@@ -106,13 +112,13 @@
 
 .homepage.blurb {
   font-size: var(--font-size);
-  width: max-content;
+  width: var(--word-break-blurb);
   height: min-content;
   justify-content: left;
   align-items: center;
   background-color: transparent;
   margin-left: 3vw;
-  margin-bottom: 37vh;
+  margin-bottom: var(--blurb-margin);
   animation: text-background-pan 3s linear infinite;
   background: linear-gradient(
     to right,
