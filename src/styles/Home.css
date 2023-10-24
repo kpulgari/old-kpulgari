@@ -21,8 +21,8 @@
     --blob-width: 50vw;
     --blob-blur: 55%;
     --word-break: 10%;
-    --word-break-blurb: 20%;
-    --blurb-margin: 32vh;
+    --word-break-blurb: 25%;
+    --blurb-margin: 33vh;
   }
 }
 
@@ -79,9 +79,9 @@
   display: flex;
   position: fixed;
   left: 0;
-  bottom: 10vh;
-  height: 80vh;
-  width: 100vw;
+  bottom: 8%;
+  height: 82%;
+  width: 100%;
   background-color: var(--background-color);
   user-select: none;
   -webkit-user-select: none;
@@ -138,54 +138,56 @@
   -webkit-text-fill-color: transparent;
 }
 
-.blobs {
-  display: flex;
-  width: var(--blob-width);
-  height: 80vh;
-  background-color: transparent;
-  position: fixed;
-  right: 0;
-}
+@media screen and (min-width: 450px) {
+  .blobs {
+    display: flex;
+    width: var(--blob-width);
+    height: 80vh;
+    background-color: transparent;
+    position: fixed;
+    right: 0;
+  }
 
-.blur {
-  -webkit-backdrop-filter: blur(7vw);
-  backdrop-filter: blur(7vw);
-  position: fixed;
-  height: 90vh;
-  width: var(--blob-blur);
-  right: 0;
-  background-color: transparent;
-}
+  .blur {
+    -webkit-backdrop-filter: blur(7vw);
+    backdrop-filter: blur(7vw);
+    position: fixed;
+    height: 90%;
+    width: var(--blob-blur);
+    right: 0;
+    background-color: transparent;
+  }
 
-.blob.one {
-  background-color: var(--blob-one-color);
-  position: fixed;
-  width: var(--blob-size);
-  height: var(--blob-size);
-  border-radius: 100%;
-  left: 65%;
-  top: 40%;
-  animation: blob1 60s ease infinite alternate-reverse;
-}
+  .blob.one {
+    background-color: var(--blob-one-color);
+    position: fixed;
+    width: var(--blob-size);
+    height: var(--blob-size);
+    border-radius: 100%;
+    left: 65%;
+    top: 40%;
+    animation: blob1 60s ease infinite alternate-reverse;
+  }
 
-.blob.two {
-  background-color: var(--blob-two-color);
-  position: fixed;
-  width: var(--blob-size);
-  height: var(--blob-size);
-  border-radius: 100%;
-  left: 77%;
-  top: 50%;
-  animation: blob2 60s ease infinite alternate;
-}
+  .blob.two {
+    background-color: var(--blob-two-color);
+    position: fixed;
+    width: var(--blob-size);
+    height: var(--blob-size);
+    border-radius: 100%;
+    left: 77%;
+    top: 50%;
+    animation: blob2 60s ease infinite alternate;
+  }
 
-.blob.three {
-  background-color: var(--blob-three-color);
-  position: fixed;
-  width: var(--blob-size);
-  height: var(--blob-size);
-  border-radius: 100%;
-  left: 60%;
-  top: 45%;
-  animation: blob3 60s ease infinite alternate;
+  .blob.three {
+    background-color: var(--blob-three-color);
+    position: fixed;
+    width: var(--blob-size);
+    height: var(--blob-size);
+    border-radius: 100%;
+    left: 60%;
+    top: 45%;
+    animation: blob3 60s ease infinite alternate;
+  }
 }

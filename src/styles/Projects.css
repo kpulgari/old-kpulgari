@@ -27,9 +27,9 @@
   align-items: center;
   position: fixed;
   left: 0;
-  bottom: 10vh;
-  height: 80vh;
-  width: 100vw;
+  bottom: 8%;
+  height: 82%;
+  width: 100%;
   background-color: var(--background-color);
   user-select: none;
   -webkit-user-select: none;
