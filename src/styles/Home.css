@@ -90,7 +90,7 @@
 .homepage.text {
   display: flex;
   width: 50%;
-  height: 80vh;
+  height: 50vh;
   color: var(--text-color);
 }
 
