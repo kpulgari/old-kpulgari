@@ -28,9 +28,7 @@
 
 @media screen and (max-width: 450px) {
   :root {
-    --blurb-margin: 35vh;
-    --word-break: max-content;
-    --word-break-blurb: max-content;
+    --blurb-margin: 31vh;
   }
 }
 
