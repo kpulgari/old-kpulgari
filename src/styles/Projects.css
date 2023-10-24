@@ -1,10 +1,12 @@
 :root {
   --font-size: 1.25vw;
+  --border-radius: 0.75vw;
 }
 
 @media screen and (max-width: 768px) {
   :root {
     --font-size: 2vh;
+    --border-radius: 1vw;
   }
 
   .inner-carousel {
@@ -92,7 +94,7 @@
   color: black;
   background-color: white;
   border: none;
-  border-radius: 0.75vw;
+  border-radius: var(--border-radius);
   padding: 0.75vw;
 }
 
