@@ -63,6 +63,8 @@
   height: 80vh;
   width: 100vw;
   background-color: var(--background-color);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .homepage.text {
@@ -82,8 +84,6 @@
   margin-left: 3vw;
   margin-bottom: 40vh;
   cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
 }
 
 .homepage.blurb {
