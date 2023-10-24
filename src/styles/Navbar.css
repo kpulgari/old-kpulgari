@@ -46,6 +46,11 @@
   margin-right: 1.5vw;
 }
 
+.navbar-button:active {
+  transform: scale(0.95);
+  transition: all 0.2s ease;
+}
+
 .active {
   font-weight: bold;
   color: var(--button-text-hover-color);

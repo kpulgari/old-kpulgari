@@ -22,7 +22,7 @@
     --blob-blur: 55%;
     --word-break: 10%;
     --word-break-blurb: 20%;
-    --blurb-margin: 34vh;
+    --blurb-margin: 32vh;
   }
 }
 
@@ -108,6 +108,11 @@
 .homepage.header:hover {
   cursor: pointer;
   color: var(--button-text-color);
+}
+
+.homepage.header:active {
+  transform: scale(0.95);
+  transition: all 0.2s ease;
 }
 
 .homepage.blurb {
