@@ -22,7 +22,13 @@
     --blob-blur: 55%;
     --word-break: 10%;
     --word-break-blurb: 25%;
-    --blurb-margin: 33vh;
+    --blurb-margin: 32vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :root {
+    --blurb-margin: 30vh;
   }
 }
 
