@@ -7,8 +7,8 @@
 @media screen and (max-width: 768px) {
   :root {
     --font-size: 2vh;
-    --padding: 2vh;
-    --border-radius: 1.5vw;
+    --padding: 1.5vh;
+    --border-radius: 2vh;
   }
 }
 
@@ -35,6 +35,7 @@
   border-radius: var(--border-radius);
   padding: var(--padding);
   color: var(--button-text-color);
+  transition: all 0.2s ease, background-color 0s;
 }
 
 .navbar-button:hover {
@@ -50,7 +51,6 @@
 
 .navbar-button:active {
   transform: scale(0.95);
-  transition: all 0.2s ease;
 }
 
 .active {

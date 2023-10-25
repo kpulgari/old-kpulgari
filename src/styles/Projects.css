@@ -101,6 +101,7 @@
 .project.button:hover {
   background-color: rgb(64, 61, 61);
   color: white;
+  transition: all 0.2s ease;
 }
 
 .carousel-item:hover .overlay {
