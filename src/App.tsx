@@ -73,6 +73,7 @@ function App() {
         currentPage={currentPage}
         darkmodeIcon={
           <FontAwesomeIcon
+            className="dark-icon"
             icon={darkModeEnabled ? faSun : faMoon}
             style={iconStyles}
           />
@@ -81,11 +82,27 @@ function App() {
         onDarkModeClick={handleDarkModeChange}
       ></Navbar>
       <Footer
-        githubLogo={<FontAwesomeIcon icon={faGithub} style={iconStyles} />}
-        linkedInLogo={
-          <FontAwesomeIcon icon={faLinkedinIn} style={iconStyles} />
+        githubLogo={
+          <FontAwesomeIcon
+            className="footer-icon"
+            icon={faGithub}
+            style={iconStyles}
+          />
         }
-        mailLogo={<FontAwesomeIcon icon={faEnvelope} style={iconStyles} />}
+        linkedInLogo={
+          <FontAwesomeIcon
+            className="footer-icon"
+            icon={faLinkedinIn}
+            style={iconStyles}
+          />
+        }
+        mailLogo={
+          <FontAwesomeIcon
+            className="footer-icon"
+            icon={faEnvelope}
+            style={iconStyles}
+          />
+        }
       ></Footer>
       {renderPage()}
     </div>

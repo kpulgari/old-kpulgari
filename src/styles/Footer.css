@@ -17,3 +17,8 @@
   margin-top: 3vh;
   margin-left: 1.5vw;
 }
+
+.footer-icon:hover {
+  color: #999 !important;
+  transition: all 0.2s ease;
+}
