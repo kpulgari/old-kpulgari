@@ -54,6 +54,12 @@
   display: flex;
 }
 
+@media screen and (min-width: 769px) {
+  .inner-carousel {
+    padding: 5px;
+  }
+}
+
 .carousel {
   display: flex;
   justify-content: center;
