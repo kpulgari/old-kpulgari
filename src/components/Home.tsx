@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "../styles/Home.css";
 
 interface Props {
@@ -11,9 +10,18 @@ export const Home = ({ onHeaderClick: onHeaderClick, blobColor }: Props) => {
     <div className="homepage">
       <div className={`homepage text ${blobColor}`}>
         <h1 className="homepage header" onClick={onHeaderClick}>
-          Kaushik Pulgari
+          KAUSHIK PULGARI.
         </h1>
-        <span className="homepage blurb">CS + Economics @ UIUC</span>
+        <span
+          onClick={() => {
+            window.open(
+              "https://cs.illinois.edu/academics/undergraduate/degree-program-options/cs-x-degree-programs/computer-science-economics"
+            );
+          }}
+          className="homepage blurb"
+        >
+          CS + Economics @ UIUC ↗
+        </span>
       </div>
       <div className="blobs">
         <div className={`blob one ${blobColor}`}></div>
