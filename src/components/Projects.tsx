@@ -2,18 +2,16 @@ import { Images } from "./Images";
 
 import "../styles/Projects.css";
 
-const names = ["IFI Terminal", "Linking Wikipedia Pages", "A Simple Todo App"];
+const names = ["IFI Terminal", "Linking Wikipedia Pages"];
 
 const description = [
   "Easy-to-use Python application that displays real-time financial information on the terminal.",
   "C++ program that analyzes Wikipedia pages as a graph and implements traversal algorithms like BFS, IDDFS, and PageRank.",
-  "(title)",
 ];
 
 const links = [
   "https://github.com/kpulgari/ifi-terminal",
   "https://github.com/kpulgari/linking-wikipedia-pages",
-  "https://github.com/kpulgari/react-todo-app",
 ];
 
 const demos = [
@@ -49,14 +47,12 @@ export const Projects = () => {
                   >
                     GitHub
                   </button>
-                  {index < demos.length ? (
-                    <button
-                      className="project demo button"
-                      onClick={() => handleDemoClick(index)}
-                    >
-                      Demo
-                    </button>
-                  ) : null}
+                  <button
+                    className="project demo button"
+                    onClick={() => handleDemoClick(index)}
+                  >
+                    Demo
+                  </button>
                 </div>
               </div>
             </div>
