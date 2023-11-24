@@ -45,26 +45,26 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-  flex-wrap: var(--flex-wrap);
+  flex-wrap: var(--about-flex-wrap);
   flex-basis: 0;
 }
 
 .about-header {
-  font-size: var(--font-size-header);
+  font-size: var(--about-font-size-header);
   margin: 3vw;
   height: min-content;
 }
 
 .about-blurb {
-  font-size: var(--font-size-blurb);
+  font-size: var(--about-font-size-blurb);
   margin: 3vw;
   height: min-content;
   width: 40vw;
 }
 
 .profile-pic {
-  width: var(--pic-size);
-  height: var(--pic-size);
+  width: var(--about-pic-size);
+  height: var(--about-pic-size);
   border-radius: 100%;
   transition: all 0.2s ease;
   margin: 3vw;
