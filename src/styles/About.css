@@ -1,16 +1,25 @@
 :root {
-  --pic-size: 175px;
-  --font-size-blurb: 20px;
-  --font-size-header: 50px;
-  --flex-wrap: none;
+  --about-pic-size: 175px;
+  --about-font-size-blurb: 20px;
+  --about-font-size-header: 50px;
+  --about-flex-wrap: none;
 }
 
 @media screen and (max-width: 500px) {
   :root {
-    --pic-size: 100px;
-    --font-size-blurb: 12px;
-    --font-size-header: 30px;
-    --flex-wrap: wrap;
+    --about-pic-size: 100px;
+    --about-font-size-blurb: 12px;
+    --about-font-size-header: 30px;
+    --about-flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  :root {
+    --about-pic-size: 125px;
+    --about-font-size-blurb: 12px;
+    --about-font-size-header: 30px;
+    --about-flex-wrap: none;
   }
 }
 
