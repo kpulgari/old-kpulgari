@@ -16,7 +16,8 @@ export const About = () => {
           If you want to get in contact, don't hesitate to reach out!
         </p>
         <img
-          src="https://github.com/kpulgari/personal-webpage/blob/36081b4dd509e314bd6868b8b45fddc580326a2d/src/assets/profilepic.jpg"
+          src="src/assets/profilepic.jpg"
+          alt="Kaushik Pulgari Profile Picture"
           className="profile-pic"
         ></img>
       </div>
