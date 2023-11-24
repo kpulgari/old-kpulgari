@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 768px) and (min-width: 500px) {
   :root {
-    --about-pic-size: 125px;
+    --about-pic-size: 100px;
     --about-font-size-blurb: 12px;
     --about-font-size-header: 30px;
     --about-flex-wrap: none;

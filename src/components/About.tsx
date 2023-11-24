@@ -10,13 +10,13 @@ export const About = () => {
       <div className="about text container">
         <h1 className="about-header">Hey!</h1>
         <p className="about-blurb">
-          I'm Kaushik, a Junior at the University of Illinois Urbana-Champaign
+          I'm Kaushik, a junior at the University of Illinois Urbana-Champaign
           studying Computer Science + Economics. I have experience in both
           software development and testing, primarily through internships,
           personal projects, and course work. Currently, I am interested in
           full-stack development and artificial intelligence. Outside of code, I
           enjoy learning about geography, watching sports, and hitting the gym.
-          If you want to get in contact, don't hesitate to reach out!
+          If you want to get in contact, please don't hesitate to reach out!
         </p>
         <img
           src={profilepic[0]}
