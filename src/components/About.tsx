@@ -1,5 +1,8 @@
-import React from "react";
 import "../styles/About.css";
+
+import { ProfilePicture } from "./Images";
+
+const profilepic = ProfilePicture();
 
 export const About = () => {
   return (
@@ -16,7 +19,7 @@ export const About = () => {
           If you want to get in contact, don't hesitate to reach out!
         </p>
         <img
-          src="src/assets/profilepic.jpg"
+          src={profilepic[0]}
           alt="Kaushik Pulgari Profile Picture"
           className="profile-pic"
         ></img>
