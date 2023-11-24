@@ -3,6 +3,7 @@ import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { Projects } from "./components/Projects";
+import { About } from "./components/About";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun, faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -64,6 +65,8 @@ function App() {
       return <Home onHeaderClick={handleHeaderClick} blobColor={blobColor} />;
     } else if (currentPage === "projects") {
       return <Projects />;
+    } else if (currentPage === "about") {
+      return <About />;
     }
   };
 

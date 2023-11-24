@@ -31,6 +31,14 @@ export const Navbar = ({
         Home
       </button>
       <button
+        className={`navbar-button about ${
+          currentPage === "about" ? "active" : ""
+        }`}
+        onClick={() => onPageChange("about")}
+      >
+        About
+      </button>
+      <button
         className={`navbar-button projects ${
           currentPage === "projects" ? "active" : ""
         }`}

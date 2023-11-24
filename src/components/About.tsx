@@ -15,7 +15,10 @@ export const About = () => {
           enjoy learning about geography, watching sports, and hitting the gym.
           If you want to get in contact, don't hesitate to reach out!
         </p>
-        <img src="/src/assets/profilepic.jpg" className="profile-pic"></img>
+        <img
+          src="https://github.com/kpulgari/personal-webpage/blob/36081b4dd509e314bd6868b8b45fddc580326a2d/src/assets/profilepic.jpg"
+          className="profile-pic"
+        ></img>
       </div>
     </div>
   );
