@@ -13,7 +13,7 @@
   --blurb-margin: 37vh;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 768px) {
   :root {
     --blob-size: 10vw;
     --font-size: 2vh;
