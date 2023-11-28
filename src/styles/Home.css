@@ -13,7 +13,7 @@
   --blurb-margin: 37vh;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
   :root {
     --blob-size: 10vw;
     --font-size: 2vh;
@@ -26,7 +26,7 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   :root {
     --blurb-margin: 31vh;
   }
@@ -172,7 +172,7 @@
   );
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 600px) {
   .blobs {
     display: flex;
     width: var(--blob-width);
