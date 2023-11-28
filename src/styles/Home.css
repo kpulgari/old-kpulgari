@@ -3,11 +3,11 @@
   --blob-two-color: rgb(100, 39, 233);
   --blob-three-color: rgb(228, 58, 217);
 
-  --blob-size: 12vw;
+  --blob-size: 12.5vw;
   --font-size: 1.25vw;
   --font-size-header: 3.5vw;
   --blob-width: 50vw;
-  --blob-blur: 52.5%;
+  --blob-blur: 55%;
   --word-break: max-content;
   --word-break-blurb: max-content;
   --blurb-margin: 37vh;
@@ -26,7 +26,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   :root {
     --blurb-margin: 31vh;
   }
