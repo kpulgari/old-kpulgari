@@ -3,7 +3,7 @@
   --border-radius: 0.75vw;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   :root {
     --font-size: 2vh;
     --border-radius: 1vw;
@@ -54,7 +54,7 @@
   display: flex;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 600px) {
   .inner-carousel {
     padding: 5px;
   }
