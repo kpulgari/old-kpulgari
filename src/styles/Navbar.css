@@ -72,6 +72,15 @@
   transform: scale(0.95);
 }
 
+.resume-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.navbar-button.resume:hover .resume-arrow {
+  transform: rotate(45deg);
+}
+
 .active {
   font-weight: bold;
   color: var(--button-text-hover-color);
