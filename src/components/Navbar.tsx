@@ -47,7 +47,7 @@ export const Navbar = ({
         Projects
       </button>
       <button className="navbar-button resume" onClick={onResumeButtonClick}>
-        Resume
+        Resume ↗
       </button>
       <button className="navbar-button darkmode" onClick={onDarkModeClick}>
         {darkmodeIcon}

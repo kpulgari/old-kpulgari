@@ -12,16 +12,7 @@ export const Home = ({ onHeaderClick: onHeaderClick, blobColor }: Props) => {
         <h1 className="homepage header" onClick={onHeaderClick}>
           KAUSHIK PULGARI.
         </h1>
-        <span
-          onClick={() => {
-            window.open(
-              "https://cs.illinois.edu/academics/undergraduate/degree-program-options/cs-x-degree-programs/computer-science-economics"
-            );
-          }}
-          className="homepage blurb"
-        >
-          CS + Economics @ UIUC ↗
-        </span>
+        <span className="homepage blurb">CS + Economics @ UIUC</span>
       </div>
       <div className="blobs">
         <div className={`blob one ${blobColor}`}></div>

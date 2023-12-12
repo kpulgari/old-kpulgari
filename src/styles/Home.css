@@ -149,7 +149,7 @@
   -webkit-text-fill-color: transparent;
   transition: transform 0.2s ease;
   display: inline-block;
-  cursor: pointer;
+  cursor: default;
 }
 
 .homepage.blurb::after {
