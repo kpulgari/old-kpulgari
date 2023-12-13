@@ -82,6 +82,9 @@
 }
 
 .active {
-  font-weight: bold;
+  text-shadow: -0.25px -0.25px 0 var(--button-text-hover-color),
+    0.25px -0.25px 0 var(--button-text-hover-color),
+    -0.25px 0.25px 0 var(--button-text-hover-color),
+    0.25px 0.25px 0 var(--button-text-hover-color);
   color: var(--button-text-hover-color);
 }
