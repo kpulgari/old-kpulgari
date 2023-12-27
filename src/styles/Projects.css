@@ -1,12 +1,18 @@
 :root {
   --font-size: 1.25vw;
   --border-radius: 0.75vw;
+  --carousel-item-size: 40vw;
+  --align-items: left;
+  --overflow-x: scroll;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   :root {
     --font-size: 2vh;
     --border-radius: 1vw;
+    --carousel-item-size: 100%;
+    --align-items: center;
+    --overflow-x: hidden;
   }
 
   .inner-carousel {
@@ -18,8 +24,12 @@
   }
 
   .carousel {
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow-x: var(--overflow-x);
+    justify-content: var(--align-items);
+  }
+
+  .carousel-item {
+    width: var(--carousel-item-size);
   }
 }
 
@@ -39,8 +49,8 @@
 
 .carousel-item {
   position: relative;
-  width: 100%;
-  height: 60vh;
+  width: var(--carousel-item-size);
+  height: 58vh;
   padding: 1vw;
 }
 
@@ -54,7 +64,7 @@
   display: flex;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .inner-carousel {
     padding: 5px;
   }
@@ -62,12 +72,13 @@
 
 .carousel {
   display: flex;
-  justify-content: center;
+  justify-content: var(--align-items);
   align-items: center;
   background-color: var(--button-hover-color);
   border-radius: 10px;
   width: 90%;
   height: 80%;
+  overflow-x: var(--overflow-x);
 }
 
 .overlay {

@@ -2,19 +2,22 @@ import { Images } from "./Images";
 
 import "../styles/Projects.css";
 
-const names = ["IFI Terminal", "Linking Wikipedia Pages"];
+const names = ["SmartShopper", "IFI Terminal", "Linking Wikipedia Pages"];
 
 const description = [
+  "Supercharged grocery store with AI-powered search (in progress).",
   "Easy-to-use Python application that displays real-time financial information on the terminal.",
   "C++ program that analyzes Wikipedia pages as a graph and implements traversal algorithms like BFS, IDDFS, and PageRank.",
 ];
 
 const links = [
+  "https://github.com/kpulgari/smart-shopper",
   "https://github.com/kpulgari/ifi-terminal",
   "https://github.com/kpulgari/linking-wikipedia-pages",
 ];
 
 const demos = [
+  "",
   "https://drive.google.com/file/d/1jaHfjvsNJg4x4zcLPFz05_uAKi_7Y6Ny/view",
   "https://drive.google.com/file/d/1gOjSGB0JahHcqG-SETZk9mJUC08JLbgs/view",
 ];
@@ -47,12 +50,14 @@ export const Projects = () => {
                   >
                     GitHub
                   </button>
-                  <button
-                    className="project demo button"
-                    onClick={() => handleDemoClick(index)}
-                  >
-                    Demo
-                  </button>
+                  {index !== 0 ? (
+                    <button
+                      className="project demo button"
+                      onClick={() => handleDemoClick(index)}
+                    >
+                      Demo
+                    </button>
+                  ) : null}
                 </div>
               </div>
             </div>
