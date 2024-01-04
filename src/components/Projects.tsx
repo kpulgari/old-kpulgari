@@ -5,7 +5,7 @@ import "../styles/Projects.css";
 const names = ["SmartShopper", "IFI Terminal", "Linking Wikipedia Pages"];
 
 const description = [
-  "Supercharged grocery store with AI-powered search (in progress).",
+  "Supercharged grocery store with AI-powered search.",
   "Easy-to-use Python application that displays real-time financial information on the terminal.",
   "C++ program that analyzes Wikipedia pages as a graph and implements traversal algorithms like BFS, IDDFS, and PageRank.",
 ];
