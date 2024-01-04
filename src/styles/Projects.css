@@ -1,7 +1,7 @@
 :root {
   --font-size: 1.25vw;
   --border-radius: 0.75vw;
-  --carousel-item-size: 40vw;
+  --carousel-item-size: 700px;
   --align-items: left;
   --overflow-x: scroll;
 }
