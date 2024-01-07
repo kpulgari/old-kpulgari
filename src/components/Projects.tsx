@@ -17,7 +17,7 @@ const links = [
 ];
 
 const demos = [
-  "",
+  "https://drive.google.com/file/d/1TcBZP7rfx919vlNNGsMUHwuq-fYZcGEf/view?usp=sharing",
   "https://drive.google.com/file/d/1jaHfjvsNJg4x4zcLPFz05_uAKi_7Y6Ny/view",
   "https://drive.google.com/file/d/1gOjSGB0JahHcqG-SETZk9mJUC08JLbgs/view",
 ];
@@ -50,14 +50,12 @@ export const Projects = () => {
                   >
                     GitHub
                   </button>
-                  {index !== 0 ? (
-                    <button
-                      className="project demo button"
-                      onClick={() => handleDemoClick(index)}
-                    >
-                      Demo
-                    </button>
-                  ) : null}
+                  <button
+                    className="project demo button"
+                    onClick={() => handleDemoClick(index)}
+                  >
+                    Demo
+                  </button>
                 </div>
               </div>
             </div>
