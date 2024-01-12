@@ -4,6 +4,7 @@
   --carousel-item-size: 700px;
   --align-items: left;
   --overflow-x: scroll;
+  --carousel-item-height: 58vh;
 }
 
 @media screen and (max-width: 800px) {
@@ -11,6 +12,7 @@
     --font-size: 2vh;
     --border-radius: 1vw;
     --carousel-item-size: 100%;
+    --carousel-item-height: 50vw;
     --align-items: center;
     --overflow-x: hidden;
   }
@@ -30,6 +32,7 @@
 
   .carousel-item {
     width: var(--carousel-item-size);
+    height: var(--carousel-item-height);
   }
 }
 
@@ -50,7 +53,7 @@
 .carousel-item {
   position: relative;
   width: var(--carousel-item-size);
-  height: 58vh;
+  height: var(--carousel-item-height);
   padding: 1vw;
 }
 
