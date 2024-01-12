@@ -5,6 +5,7 @@
   --align-items: left;
   --overflow-x: scroll;
   --carousel-item-height: 58vh;
+  --margin-buttons: 3vh;
 }
 
 @media screen and (max-width: 800px) {
@@ -15,6 +16,7 @@
     --carousel-item-height: 50vw;
     --align-items: center;
     --overflow-x: hidden;
+    --margin-buttons: 10px;
   }
 
   .inner-carousel {
@@ -23,6 +25,11 @@
     height: 100%;
     padding-right: 2.5%;
     padding-top: 2.5%;
+    gap: 5px;
+  }
+
+  .project.button {
+    margin-top: var(--margin-buttons);
   }
 
   .carousel {
@@ -71,9 +78,7 @@
   .inner-carousel {
     padding: 5px;
   }
-}
 
-@media screen and (min-width: 801px) {
   .carousel {
     overflow-y: hidden;
   }
@@ -113,7 +118,7 @@
 }
 
 .project.button {
-  margin-top: 3vh;
+  margin-top: var(--margin-buttons);
   margin-inline: 1vw;
   cursor: pointer;
   font-size: var(--font-size);
