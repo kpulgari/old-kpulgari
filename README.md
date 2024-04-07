@@ -1,1 +1,1 @@
-# [kpulgari.com](https://kpulgari.com/home/)
+# [kpulgari.com](https://kpulgari.com/)
