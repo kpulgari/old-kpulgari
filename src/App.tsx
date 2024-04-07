@@ -1,4 +1,5 @@
-import { ReactEventHandler, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
@@ -60,55 +61,56 @@ function App() {
     setBlobColor(colorSelections[nextIndex]);
   };
 
-  const renderPage = () => {
-    if (currentPage === "home") {
-      return <Home onHeaderClick={handleHeaderClick} blobColor={blobColor} />;
-    } else if (currentPage === "projects") {
-      return <Projects />;
-    } else if (currentPage === "about") {
-      return <About />;
-    }
-  };
-
   return (
-    <div className={`root ${darkModeEnabled ? "dark-mode" : ""}`}>
-      <Navbar
-        currentPage={currentPage}
-        darkmodeIcon={
-          <FontAwesomeIcon
-            className="dark-icon"
-            icon={darkModeEnabled ? faSun : faMoon}
-            style={iconStyles}
+    <Router>
+      <div className={`root ${darkModeEnabled ? "dark-mode" : ""}`}>
+        <Navbar
+          currentPage={currentPage}
+          darkmodeIcon={
+            <FontAwesomeIcon
+              className="dark-icon"
+              icon={darkModeEnabled ? faSun : faMoon}
+              style={iconStyles}
+            />
+          }
+          onPageChange={handlePageChange}
+          onDarkModeClick={handleDarkModeChange}
+        />
+        <Footer
+          githubLogo={
+            <FontAwesomeIcon
+              className="footer-icon"
+              icon={faGithub}
+              style={iconStyles}
+            />
+          }
+          linkedInLogo={
+            <FontAwesomeIcon
+              className="footer-icon"
+              icon={faLinkedinIn}
+              style={iconStyles}
+            />
+          }
+          mailLogo={
+            <FontAwesomeIcon
+              className="footer-icon"
+              icon={faEnvelope}
+              style={iconStyles}
+            />
+          }
+        />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home onHeaderClick={handleHeaderClick} blobColor={blobColor} />
+            }
           />
-        }
-        onPageChange={handlePageChange}
-        onDarkModeClick={handleDarkModeChange}
-      ></Navbar>
-      <Footer
-        githubLogo={
-          <FontAwesomeIcon
-            className="footer-icon"
-            icon={faGithub}
-            style={iconStyles}
-          />
-        }
-        linkedInLogo={
-          <FontAwesomeIcon
-            className="footer-icon"
-            icon={faLinkedinIn}
-            style={iconStyles}
-          />
-        }
-        mailLogo={
-          <FontAwesomeIcon
-            className="footer-icon"
-            icon={faEnvelope}
-            style={iconStyles}
-          />
-        }
-      ></Footer>
-      {renderPage()}
-    </div>
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

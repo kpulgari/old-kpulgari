@@ -1,4 +1,5 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
+import { Link } from "react-router-dom"; // Import Link component
 import "../styles/Navbar.css";
 
 interface Props {
@@ -22,30 +23,33 @@ export const Navbar = ({
 
   return (
     <div className={`navbar text`}>
-      <button
+      <Link
+        to="/"
         className={`navbar-button home ${
           currentPage === "home" ? "active" : ""
         }`}
         onClick={() => onPageChange("home")}
       >
         Home
-      </button>
-      <button
+      </Link>
+      <Link
+        to="/about"
         className={`navbar-button about ${
           currentPage === "about" ? "active" : ""
         }`}
         onClick={() => onPageChange("about")}
       >
         About
-      </button>
-      <button
+      </Link>
+      <Link
+        to="/projects"
         className={`navbar-button projects ${
           currentPage === "projects" ? "active" : ""
         }`}
         onClick={() => onPageChange("projects")}
       >
         Projects
-      </button>
+      </Link>
       <button className="navbar-button resume" onClick={onResumeButtonClick}>
         Resume <span className="resume-arrow ">↗</span>
       </button>
