@@ -16,7 +16,7 @@ export const Navbar = ({
 }: Props) => {
   function onResumeButtonClick(): void {
     window.open(
-      "https://drive.google.com/file/d/1ZeqJbomMyVlbZLOCUbJ15WJ4GfstfyHG/view?usp=sharing"
+      "https://drive.google.com/file/d/1R_bz7D0mY6owGwnKIOlEqJ0Qwzz4v9Gc/view?usp=sharing"
     );
   }
 
